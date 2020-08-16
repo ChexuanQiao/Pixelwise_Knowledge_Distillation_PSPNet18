@@ -2,9 +2,11 @@
 
 A PyTorch implementation of PSPNet18 with pixelwise knowledge distillation.
 
+This repo is based on and modified from [semseg](https://github.com/hszhao/semseg).
+
 Crop size 481 * 481  
 With 713 * 713 pretrained PSPNet50 as teacher_net:  
-Main_loss = Kldiv * (1 - alpha ) + cross_entropy * alpha   
+Main_loss = Kldiv * (1 - alpha) + cross_entropy * alpha   
 
    |  Config   |    mIoU/mAcc/aAcc     |
    | :-------: | :-------------------: |
