@@ -30,9 +30,9 @@ TRAIN:
   manual_seed:
   print_freq: 10
   save_freq: 1
-  save_path: exp/cityscapes/pspnet50_T4A1&2_481/model
+  save_path: exp/cityscapes/pspnet50/model
   weight:  # path to initial weight (default: none)
-  resume:  #exp/cityscapes/pspnet50_T18A2481/model/train_epoch_140.pth # path to latest checkpoint (default: none)
+  resume:  # path to latest checkpoint (default: none)
   evaluate: False  # evaluate on validation set, extra gpu memory needed and small batch_size_val is recommend
   temperature: 4.
   alpha: 0.5
@@ -54,7 +54,7 @@ TEST:
   index_start: 0  # evaluation start index in list
   index_step: 0  # evaluation step index in list, 0 means to end
   test_gpu: [0,1]
-  model_path: exp/cityscapes/pspnet50_T4A1&2_481/model/train_epoch_200.pth
-  save_folder: exp/cityscapes/pspnet50_T4A1&2_481/result/epoch_200/val/ss  # results save folder
+  model_path: exp/cityscapes/pspnet50/model/train_epoch_200.pth
+  save_folder: exp/cityscapes/pspnet50/result/epoch_200/val/ss  # results save folder
   colors_path: data/cityscapes/cityscapes_colors.txt  # path of dataset colors
   names_path: data/cityscapes/cityscapes_names.txt  # path of dataset category names
